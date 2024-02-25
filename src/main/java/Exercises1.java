@@ -4,14 +4,14 @@ public class Exercises1 {
      */
     public long factorial(int n) {
         int sum = 1;
-        n=5;
+
         for(int i =1;i<=n;i++){
             sum = sum*i;
         }
 
 
         return sum;
-        return 0;
+
     }
 
 
