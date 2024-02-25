@@ -9,7 +9,7 @@ public class Exercises1 {
             sum = sum*i;
         }
 
-
+        System.out.print(sum);
         return sum;
 
     }
@@ -21,7 +21,9 @@ public class Exercises1 {
     */
     public long fibonacci(int n) {
         if (n <= 1) {
-            return n;
+
+            System.out.print(n);
+            return 0;
         } else {
             return fibonacci(n - 1) + fibonacci(n - 2);
         }
