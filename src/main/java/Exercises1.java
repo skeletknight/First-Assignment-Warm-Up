@@ -43,20 +43,19 @@ public class Exercises1 {
 
      */
     public char[][] generateTriangle(int rows) {
-        if(rows==0){
-
-        }
-        else {
-            for (int i = 0; i <= rows; i++) {
-                for (int j = 0; j < i; j++) {
-                    System.out.print("*");
+        if (rows == 0) {
+            return new char[0][0];
+        } else {
+            char[][] triangle = new char[rows][];
+            for (int i = 0; i < rows; i++) {
+                triangle[i] = new char[i + 1];
+                for (int j = 0; j <= i; j++) {
+                    triangle[i][j] = '*';
                 }
-                System.out.println();
             }
+            return triangle;
         }
-        return null;
     }
-
 
 
 
