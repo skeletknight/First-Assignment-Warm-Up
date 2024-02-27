@@ -9,7 +9,7 @@ public class Exercises1 {
             sum = sum*i;
         }
 
-        System.out.print(sum);
+
         return sum;
 
     }
@@ -21,9 +21,7 @@ public class Exercises1 {
     */
     public long fibonacci(int n) {
         if (n <= 1) {
-
-            System.out.print(n);
-            return 0;
+            return n;
         } else {
             return fibonacci(n - 1) + fibonacci(n - 2);
         }
@@ -45,15 +43,21 @@ public class Exercises1 {
 
      */
     public char[][] generateTriangle(int rows) {
-        for(int i = 0;i<=rows;i++){
-            for(int j=0;j<i;j++){
-                System.out.print("*");
+        if(rows==0){
+
+        }
+        else {
+            for (int i = 0; i <= rows; i++) {
+                for (int j = 0; j < i; j++) {
+                    System.out.print("*");
+                }
+                System.out.println();
             }
-            System.out.println();
         }
         return null;
-
     }
+
+
 
 
     public static void main(String[] args) {
